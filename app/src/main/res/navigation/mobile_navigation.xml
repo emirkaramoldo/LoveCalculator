@@ -7,14 +7,24 @@
 
     <fragment
         android:id="@+id/navigation_home"
-        android:name="com.example.lovecalculator.HomeFragment"
+        android:name="com.example.lovecalculator.ui.home.HomeFragment"
         android:label="Home"
         tools:layout="@layout/fragment_home" />
 
     <fragment
         android:id="@+id/navigation_result"
-        android:name="com.example.lovecalculator.ResultFragment"
+        android:name="com.example.lovecalculator.ui.result.ResultFragment"
         android:label="Result"
         tools:layout="@layout/fragment_result" />
+    <fragment
+        android:id="@+id/navigation_history"
+        android:name="com.example.lovecalculator.ui.history.HistoryFragment"
+        android:label="History"
+        tools:layout="@layout/fragment_history" />
+    <fragment
+        android:id="@+id/navigation_on_board"
+        android:name="com.example.lovecalculator.ui.onboard.OnBoardFragment"
+        android:label="Onboard"
+        tools:layout="@layout/fragment_on_board" />
 
 </navigation>

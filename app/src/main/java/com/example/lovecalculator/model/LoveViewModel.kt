@@ -1,4 +1,4 @@
-package com.example.lovecalculator
+package com.example.lovecalculator.model
 
 import androidx.lifecycle.ViewModel
 

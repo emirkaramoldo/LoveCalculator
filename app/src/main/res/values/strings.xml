@@ -10,4 +10,8 @@
     <string name="first_name">First Name</string>
     <string name="love_calculator">Love Calculator</string>
     <string name="calculate">Calculate</string>
+    <string name="_100">100</string>
+    <string name="equal">=</string>
+    <string name="back">Back</string>
+    <string name="history">History</string>
 </resources>

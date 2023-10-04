@@ -1,4 +1,4 @@
-package com.example.lovecalculator
+package com.example.lovecalculator.ui.result
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -7,6 +7,8 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.activityViewModels
 import androidx.navigation.fragment.findNavController
+import com.example.lovecalculator.model.LoveViewModel
+import com.example.lovecalculator.R
 import com.example.lovecalculator.databinding.FragmentResultBinding
 
 
@@ -44,6 +46,9 @@ class ResultFragment : Fragment() {
             tryAgainBtn.setOnClickListener {
                     findNavController().navigate(R.id.navigation_home)
                 }
+            historyBtn.setOnClickListener {
+                findNavController().navigate(R.id.navigation_history)
+            }
             }
         }
-    }
+}
