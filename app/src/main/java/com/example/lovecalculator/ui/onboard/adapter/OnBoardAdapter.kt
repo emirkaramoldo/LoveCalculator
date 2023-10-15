@@ -19,26 +19,26 @@ class OnBoardAdapter(
         OnBoard(
             "Have a good time",
             "You should take the time to help those who need you",
-            R.drawable.onboard_1,
+            R.raw.animation_lnrkqo2e
 
         ),
         OnBoard(
             "Cherishing love",
             "It is now no longer possible for you to cherish love",
-            R.drawable.onboard_2,
+            R.raw.animation_lnrkrcrp
 
         ),
         OnBoard(
             "Have a breakup",
             "We have made the correction for you don't worry \n" +
                     "Maybe someone is waiting for you",
-            R.drawable.onboard_3,
+            R.raw.animation_lnrku45x
         ),
         OnBoard(
             "Let's find your couple!",
             "Don't waste time when you can become happy right now!",
-            R.drawable.logo,
-    )
+            R.raw.animation_lnrkrpl5
+        )
     )
 
 
@@ -65,7 +65,10 @@ class OnBoardAdapter(
         fun bind(onBoard: OnBoard) = with(binding) {
             tvTitle.text = onBoard.title
             tvDesc.text = onBoard.description
-            onBoard.image?.let { ivBoard.setImageResource(it) }
+            onBoard.anim?.let{
+                binding.animBoard.setAnimation(onBoard.anim)
+                binding.animBoard.playAnimation()
+            }
             binding.btnStart.isVisible = adapterPosition == list.lastIndex
             binding.btnSkip.isVisible = adapterPosition != list.lastIndex
             binding.btnStart.setOnClickListener {

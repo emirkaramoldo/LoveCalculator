@@ -55,9 +55,9 @@ dependencies {
     implementation("androidx.navigation:navigation-fragment-ktx:2.7.3")
     implementation("androidx.navigation:navigation-ui-ktx:2.7.3")
 
-    //Retrofit
-    implementation("com.squareup.retrofit2:retrofit:2.9.0")
-    implementation("com.squareup.retrofit2:converter-gson:2.9.0")
+        //Retrofit
+        implementation("com.squareup.retrofit2:retrofit:2.9.0")
+        implementation("com.squareup.retrofit2:converter-gson:2.9.0")
 
     //Kapt
     val room_version = "2.5.2"
@@ -81,4 +81,7 @@ dependencies {
 
     //Glide
     implementation("com.github.bumptech.glide:glide:4.15.1")
+
+    //Lottie
+    implementation("com.airbnb.android:lottie:4.0.0")
 }

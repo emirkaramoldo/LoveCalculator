@@ -34,8 +34,8 @@ class HomePresenter @Inject constructor(private val sharedPreferences: SharedPre
             })
     }
 
-    fun setView(view: HomeView){
-        this.homeView = view
+    fun setView(homeView: HomeView){
+        this.homeView = homeView
     }
 
     fun showOnBoard(){
